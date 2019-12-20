@@ -8,8 +8,6 @@ class BoastSerializer(HyperlinkedModelSerializer):
         fields = [
             'boast',
             'message',
-            'upvote',
-            'downvote',
             'post_time',
             'total_votes',
             'secret_code',

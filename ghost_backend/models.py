@@ -11,8 +11,6 @@ def random_string():
 class Boast(models.Model):
     boast = models.BooleanField(default=False)
     message = models.CharField(max_length=280)
-    upvote = models.IntegerField(default=0)
-    downvote = models.IntegerField(default=0)
     post_time = models.DateTimeField(default=timezone.now)
     total_votes = models.IntegerField(default=0)
     secret_code = models.CharField(default=random_string, max_length=6)
